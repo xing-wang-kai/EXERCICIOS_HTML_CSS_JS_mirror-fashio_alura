@@ -1,27 +1,31 @@
 /*header style css*/
-
+.container {
+margin: 0 auto;
+width: 940px;
+}
 .header {
+  position: relative;
   display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(2, 2fr);
-  grid-template-areas: " logo lista_compras"
-                        "logo menu_itens";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: " logo ."
+                        "logo .";
 }
 .header--logo{
   grid-area: logo;
 
 }
 .header-lista{
-  grid-area: menu_itens;
+
 }
 .header--compras{
-  grid-area: lista_compras;
-  grid-column: right;
-  padding-right: 50%;
+
 
 }
 .sacola{
+  position: absolute;
+  top: 0;
+  right: 0;
   background-image: url(../img/sacola.png);
   background-repeat: no-repeat;
   background-position: top right;
@@ -29,7 +33,10 @@
   font-size: 14px;
   padding-right: 35px;
   text-align: right;
+
   width: 140px;
+
+  padding-top: 8px;
 
 }
 
@@ -38,6 +45,10 @@
   list-style-type: none;
   font-style: 1.5em;
   text-align: right;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
 
 }
@@ -54,15 +65,23 @@
   background: darkred;
   border-radius: 20px;
   padding: .5%;
-  color: gray;
+  color: #007DC6;
+}
+.header--itens--lista a:active {
+  color: #867DC6;
 }
 
 
 /*rodape style css*/
 .rodape{
-  background-color: black;
+  background-image: url(../img/fundo-rodape.png);
+
+}
+.container_footer{
   display: flex;
   justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
 }
 .redes_sociais--lista{
   display: grid;
@@ -70,7 +89,8 @@
   justify-content: space-around;
 }
 
-.redes_sociais--itens{
 
-
+.redes_sociais--lista li{
+  margin-left: 1.2em;
+  margin-top: 0.9em;
 }

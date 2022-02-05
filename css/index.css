@@ -1,0 +1,122 @@
+main{
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_pesquisa_menu_foto{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "pesquisa banner";
+  justify-content: center;
+
+}
+
+.banner_destaques{
+  grid-area: banner;
+
+
+}
+.departamentos_itens{
+  position: relative;
+  top: 0;
+  left:0;
+  margin-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+.departamentos_itens a{
+  text-decoration: none;
+  color: #333333;
+}
+.departamentos_itens li{
+  background-color: white;
+  margin-bottom: 1px;
+  padding: 5px 10px;
+
+}
+.botao_pesquisa{
+  position: relative;
+}
+
+.departamentos_itens,
+.botao_pesquisa{
+  background-color: #DCDCDC;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 10px;
+  width: 230px;
+}
+.departamentos_itens h2,
+.botao_pesquisa form,
+.botao_pesquisa h2{
+  margin: 10px;
+}
+
+.botao_pesquisa input[type=search] {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.paineis{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+
+}
+.painel {
+  margin: 10px 0;
+  padding: 10px;
+  width: 445px;
+}
+.novidades {
+
+
+  background-color: #F5DCDC;
+}
+.mais-vendidos {
+
+  clear:left;
+
+  background-color: #DCDCF5;
+}
+.painel li {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  margin: 2px;
+  padding-bottom: 10px;
+}
+
+.painel h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.painel a {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+.painel h2:before {
+  content: '\2756';
+  padding-right: 5px;
+  opacity: 0.4;
+}
+
+.menu-departamentos li ul {
+  display: none;
+}
+.menu-departamentos li:hover ul {
+  display: block;
+}
+.menu-departamentos li ul li {
+  background-color: #DCDCDC;
+}
+.menu-departamentos li li a:before {
+content: '\272A';
+padding-right: 3px;
+}
