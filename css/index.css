@@ -22,7 +22,7 @@ main{
   position: relative;
   top: 0;
   left:0;
-  margin-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
 
 
@@ -39,6 +39,9 @@ main{
 }
 .botao_pesquisa{
   position: relative;
+  padding: 5px 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .departamentos_itens,
@@ -69,17 +72,16 @@ main{
   margin: 10px 0;
   padding: 10px;
   width: 445px;
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 4px #999;
 }
+
+
 .novidades {
-
-
-  background-color: #F5DCDC;
+  background: linear-gradient(#F5DCDC, #BEBEF4);
 }
 .mais-vendidos {
-
-  clear:left;
-
-  background-color: #DCDCF5;
+  background: linear-gradient(#DCDCF5, #F4BEBE);
 }
 .painel li {
   display: inline-block;
@@ -87,6 +89,16 @@ main{
   width: 140px;
   margin: 2px;
   padding-bottom: 10px;
+  transition: 0.7s ease-out;
+}
+.painel li:hover {
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 5px #333;
+  transition: 0.7s ease-in;
+  transform: scale(1.2) rotate(-5deg);
+}
+.painel li:nth-child(2n):hover {
+  transform: scale(1.2) rotate(5deg);
 }
 
 .painel h2 {
@@ -94,6 +106,7 @@ main{
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-shadow: 3px 3px 2px rgba(255,255,255,0.8);
 }
 .painel a {
   color: #333;
@@ -101,10 +114,16 @@ main{
   text-align: center;
   text-decoration: none;
 }
+.painel a:hover{
+
+}
 .painel h2:before {
   content: '\2756';
   padding-right: 5px;
   opacity: 0.4;
+}
+.painel img{
+  border-radius: 10px;
 }
 
 .menu-departamentos li ul {
@@ -115,7 +134,9 @@ main{
 }
 .menu-departamentos li ul li {
   background-color: #DCDCDC;
+  border-radius: 5px;
 }
+
 .menu-departamentos li li a:before {
 content: '\272A';
 padding-right: 3px;

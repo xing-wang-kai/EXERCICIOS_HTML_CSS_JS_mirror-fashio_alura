@@ -55,16 +55,18 @@ width: 940px;
 .header--itens--lista li{
   display: inline;
   margin-left: 3%;
+
 }
 .header--itens--lista a{
   text-decoration: none;
   color: #003366;
+  padding: 3px;
 }
 .header--itens--lista a:hover{
   text-decoration: none;
-  background: darkred;
+  background: lightpink;
   border-radius: 20px;
-  padding: .5%;
+  padding: 5px;
   color: #007DC6;
 }
 .header--itens--lista a:active {
