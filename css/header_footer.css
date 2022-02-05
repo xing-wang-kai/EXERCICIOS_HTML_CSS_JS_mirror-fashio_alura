@@ -1,0 +1,76 @@
+/*header style css*/
+
+.header {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-areas: " logo lista_compras"
+                        "logo menu_itens";
+}
+.header--logo{
+  grid-area: logo;
+
+}
+.header-lista{
+  grid-area: menu_itens;
+}
+.header--compras{
+  grid-area: lista_compras;
+  grid-column: right;
+  padding-right: 50%;
+
+}
+.sacola{
+  background-image: url(../img/sacola.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  font-size: 14px;
+  padding-right: 35px;
+  text-align: right;
+  width: 140px;
+
+}
+
+.header--itens--lista{
+
+  list-style-type: none;
+  font-style: 1.5em;
+  text-align: right;
+
+
+}
+.header--itens--lista li{
+  display: inline;
+  margin-left: 3%;
+}
+.header--itens--lista a{
+  text-decoration: none;
+  color: #003366;
+}
+.header--itens--lista a:hover{
+  text-decoration: none;
+  background: darkred;
+  border-radius: 20px;
+  padding: .5%;
+  color: gray;
+}
+
+
+/*rodape style css*/
+.rodape{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.redes_sociais--lista{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+}
+
+.redes_sociais--itens{
+
+
+}
