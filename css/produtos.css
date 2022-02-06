@@ -1,0 +1,110 @@
+.produto{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+    .cores label::after {
+        content: '';
+        display: block;
+
+        position: absolute;
+        top: 5%;
+
+        border-radius: 50%;
+        box-sizing: border-box;
+        width: 40px;
+        height: 40px;
+
+        margin-bottom: 1em;
+      }
+        label[for=verde]::after {
+            left: 10%;
+            background-color: #33CC66;
+          }
+        label[for=rosa]::after {
+            left: 35%;
+            background-color: #FF6666;
+          }
+        label[for=azul]::after {
+            left: 60%;
+            background-color: #6666FF;
+          }
+
+  .cores {
+    position: relative;
+    padding-top: 90px;
+
+  }
+    .cores input[type=radio] {
+      display: none;
+      }
+
+        .cores input:checked + label::after {
+            border: 6px solid rgba(0,0,0,0.3);
+          }
+
+        .cores input:not(:checked) + label img {
+          display: none;
+          }
+
+            .cores label img{
+              width: 90%;
+              margin-left: 5%;
+              margin-right: 5%;
+              padding-top: 1em;
+              }
+.comprar {
+  margin: 5%;
+
+  width: 8rem;
+  height: 3.5rem;
+
+
+  background-color: black;
+  color: gray;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  border-radius: 20px;
+}
+
+
+
+  @media (min-width: 600px) {
+    img {
+      float: left;
+    }
+  }
+  @media (min-width: 600px) {
+    .cores label img{
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    .cores label::after {
+
+        width: 10%;
+        height: 10%;
+
+        margin-bottom: 1em;
+      }
+
+  }
+    @media (min-width: 340px){
+      .produto{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+      label[for=verde]::after {
+          left: 20%;
+        }
+      label[for=rosa]::after {
+          left: 45%;
+        }
+      label[for=azul]::after {
+          left: 70%;
+        }
+    }
