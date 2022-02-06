@@ -1,7 +1,11 @@
 /*header style css*/
 .container {
-margin: 0 auto;
-width: 940px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+
+
 }
 .header {
   position: relative;
@@ -15,13 +19,7 @@ width: 940px;
   grid-area: logo;
 
 }
-.header-lista{
 
-}
-.header--compras{
-
-
-}
 .sacola{
   position: absolute;
   top: 0;
@@ -47,27 +45,40 @@ width: 940px;
   text-align: right;
 
   position: absolute;
-  bottom: 0;
+  bottom: -25%;
   right: 0;
 
 
 }
 .header--itens--lista li{
+  display: inline-block;
+  margin: .5%;
+  padding: .5%;
+  background-color: #F0F8FF;
+  border-radius: 20px;
+
+}
+.header--itens--lista li:hover{
   display: inline;
-  margin-left: 3%;
+  margin-left: 2%;
+  padding: 2%px;
+  background: lightpink;
+  transform: scale(1.5);
+  transition: 0.23s;
 
 }
 .header--itens--lista a{
   text-decoration: none;
   color: #003366;
-  padding: 3px;
-}
+  padding: 3%px;
+  }
 .header--itens--lista a:hover{
   text-decoration: none;
   background: lightpink;
   border-radius: 20px;
-  padding: 5px;
-  color: #007DC6;
+  transform: scale(1.5);
+  transition: 0.23s;
+  color: white;
 }
 .header--itens--lista a:active {
   color: #867DC6;
@@ -95,4 +106,62 @@ width: 940px;
 .redes_sociais--lista li{
   margin-left: 1.2em;
   margin-top: 0.9em;
+}
+
+@media (max-width: 320px){
+  .container_footer{
+    display: inline-block;
+  }
+  .googleplus,
+  .facebook,
+  .twitter{
+    text-align: center;
+    width: 40%;
+  }
+  .imagem_logo_footer img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px){
+  .header{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
+  }
+
+  .header--itens--lista{
+
+    list-style-type: none;
+    font-style: 1.5em;
+    text-align: center;
+    margin: 10% auto;
+
+    position: relative;
+
+  }
+  .header--logo{
+    width: 100%;
+    text-align: center;
+  }
+  .header--logo img{
+      text-align: center;
+  }
+
+
+}
+@media (max-width: 940px){
+  .header--logo figure img{
+    width: 45%;
+  }
+  .sacola{
+    display: none;
+  }
+  .container_footer{
+    width: 100%;
+  }
 }
