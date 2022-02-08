@@ -137,20 +137,42 @@ main{
 }
 
 .menu-departamentos li ul {
-  display: none;
+    display: none;
 }
 .menu-departamentos li:hover ul {
-  display: block;
+    display: block;
 }
 .menu-departamentos li ul li {
-  background-color: #DCDCDC;
-  border-radius: 5px;
+    background-color: #DCDCDC;
+    border-radius: 5px;
 }
 
 .menu-departamentos li li a:before {
-content: '\272A';
-padding-right: 3px;
-}
+    content: '\272A';
+    padding-right: 3px;
+  }
+
+.destaque {
+    position: relative;
+  }
+.pause,
+.play {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+.pause {
+    border-left: 10px solid #900;
+    border-right: 10px solid #900;
+    height: 30px;
+    width: 5px;
+  }
+.play {
+    border-left: 25px solid #900;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+  }
 
 
 /* ---------------------------------------------------------------------------
