@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>MIRROR FASHION INDEX</title>
+    <title>MiRROR FASHION INDEX</title>
   </head>
   <body>
     <header class="header container">

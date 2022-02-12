@@ -11,9 +11,9 @@ function TrocaPreco() {
 
   var quantidade = $input_quantidade.value;
   var total = quantidade * preco;
-
-  total = "R$ " + total.toFixed(2)
-  total = total.replace(".", ",");
+//  total = "R$ " + total.toFixed(2)
+//  total = total.replace(".", ",");
+  total = total.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 
   $output_total.value = total;
 }

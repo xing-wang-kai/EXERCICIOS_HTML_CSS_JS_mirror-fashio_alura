@@ -11,33 +11,31 @@ main{
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "pesquisa banner";
   justify-content: center;
-
 }
 
 .banner_destaques{
   grid-area: banner;
-
-
 }
+
 .departamentos_itens{
   position: relative;
   top: 0;
   left:0;
   padding-top: 5px;
   padding-bottom: 10px;
-
-
 }
+
 .departamentos_itens a{
   text-decoration: none;
   color: #333333;
 }
+
 .departamentos_itens li{
   background-color: white;
   margin-bottom: 1px;
   padding: 5px 10px;
-
 }
+
 .botao_pesquisa{
   position: relative;
   padding: 5px 0;
@@ -53,6 +51,7 @@ main{
   margin-right: 10px;
   width: 230px;
 }
+
 .departamentos_itens h2,
 .botao_pesquisa form,
 .botao_pesquisa h2{
@@ -68,8 +67,8 @@ main{
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   justify-content: space-evenly;
-
 }
+
 .painel {
   margin: 10px 0;
   padding: 10px;
@@ -78,15 +77,16 @@ main{
   box-shadow: inset 1px 1px 4px #999;
 }
 
-
 .novidades {
   background: linear-gradient(#F5DCDC, #BEBEF4);
   margin-right: 3%;
 }
+
 .mais-vendidos {
   background: linear-gradient(#DCDCF5, #F4BEBE);
   margin-left: 3%;
 }
+
 .painel li {
   display: inline-block;
   vertical-align: top;
@@ -109,6 +109,7 @@ main{
   transform: scale(1.2) rotate(-5deg);
   border-radius: 10px;
 }
+
 .painel li:nth-child(2n):hover {
   transform: scale(1.2) rotate(5deg);
   border-radius: 10px;
@@ -121,15 +122,18 @@ main{
   margin-bottom: 10px;
   text-shadow: 3px 3px 2px rgba(255,255,255,0.8);
 }
+
 .painel a {
   color: #333;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
 }
+
 .painel a:hover{
   border-radius: 10px;
 }
+
 .painel h2:before {
   content: '\2756';
   padding-right: 5px;
@@ -139,9 +143,11 @@ main{
 .menu-departamentos li ul {
     display: none;
 }
+
 .menu-departamentos li:hover ul {
     display: block;
 }
+
 .menu-departamentos li ul li {
     background-color: #DCDCDC;
     border-radius: 5px;
@@ -155,6 +161,7 @@ main{
 .destaque {
     position: relative;
   }
+
 .pause,
 .play {
     display: block;
@@ -162,12 +169,14 @@ main{
     right: 15px;
     top: 15px;
   }
+
 .pause {
     border-left: 10px solid #900;
     border-right: 10px solid #900;
     height: 30px;
     width: 5px;
   }
+
 .play {
     border-left: 25px solid #900;
     border-bottom: 15px solid transparent;
@@ -187,6 +196,7 @@ main{
     margin-right: auto;
     text-align: center;
   }
+
   .departamentos_itens,
   .botao_pesquisa{
     width: auto;
@@ -199,9 +209,11 @@ main{
   .novidades li{
     width: 80%;
   }
+
   .mais-vendidos li{
     width: 80%;
   }
+
 }
 @media (max-width: 640px){
   .main_pesquisa_menu_foto{
@@ -213,26 +225,29 @@ main{
     text-align: center;
   }
 
-
-
 }
+
 @media (max-width: 720px){
 
 }
+
 @media (max-width: 940px){
   main{
       width: 80%;
       margin-left: 10%;
       margin-right: 10%;
   }
+
   .banner_destaques img{
       width: 100%;
     }
+
   .banner_destaques{
 
     text-align: center;
     width: 100%;
   }
+
   .main_pesquisa_menu_foto{
     display:  flex;
     justify-content: space-evenly;
@@ -241,6 +256,7 @@ main{
     margin-right: auto;
     text-align: center;
   }
+
   .paineis {
     width: 90%;
     flex-wrap: wrap;
@@ -250,6 +266,7 @@ main{
     margin-left: auto;
     margin-right: auto;
   }
+
   .painel{
     width: 90%;
     margin-left: auto;
@@ -261,8 +278,6 @@ main{
   .mais-vendidos {
     margin-right: 5%;
     margin-left: 5%;
-
   }
-
 
 }
